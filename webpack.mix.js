@@ -28,6 +28,9 @@ mix.webpackConfig({
         chunkFilename: 'js/chunks/[name].js',
     },
 });
+mix.autoload({
+    jquery: ['$', 'window.jQuery',"jQuery","window.$","jquery","window.jquery"]
+});
 
 if (mix.inProduction()) {
     mix.version();

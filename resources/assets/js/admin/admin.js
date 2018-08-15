@@ -9,6 +9,13 @@ import Auth from './plugins/Auth.js';
 
 import 'animate.css/animate.css';
 
+// Admin LTE
+import 'admin-lte/bower_components/jquery/dist/jquery.min.js';
+import 'admin-lte/bower_components/bootstrap/dist/js/bootstrap.min.js';
+import 'admin-lte/bower_components/fastclick/lib/fastclick.js';
+import 'admin-lte/dist/js/adminlte.min.js';
+import 'admin-lte/plugins/iCheck/icheck.min.js';
+
 Vue.use(VueRouter);
 Vue.use(Auth);
 Vue.use(AnimatedVue);
