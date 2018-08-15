@@ -1,2 +1,2 @@
 export const client_id = 2;
-export const client_secret = 'OaBdufeaVNlg2efPFv4EHvJF6gCrs17wcbwzsJD7';
+export const client_secret = 'cn2oq6Qje6yC0uZ0Dq8D5nXRfarsEHYLbvUXlroY';
