@@ -11,6 +11,8 @@ let mix = require('laravel-mix');
  |
  */
 
+// mix.setPublicPath('public');
+
 // ADMIN
 mix.js('resources/assets/js/admin/admin.js', 'public/js')
    	.sass('resources/assets/sass/admin/admin.scss', 'public/css')
@@ -21,6 +23,11 @@ mix.js('resources/assets/js/front/front.js', 'public/js')
    	.sass('resources/assets/sass/front/front.scss', 'public/css')
    	.sourceMaps();
 
+mix.webpackConfig({
+    output: {
+        chunkFilename: 'js/chunks/[name].js',
+    },
+});
 
 if (mix.inProduction()) {
     mix.version();
